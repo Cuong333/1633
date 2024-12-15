@@ -1,28 +1,30 @@
 const cors = require('cors');
 const express = require('express');
 const bodyParser = require('body-parser');
-//const {connectDB, registerUser, loginUser, getAllProducts, getUserProfile } = require('./controller');
 
-const{
+const {
     connectDB,
-    registerUser,
-    loginUser,
+    registerUser ,
+    loginUser ,
     getAllProducts,
-}= require('./controller');
+} = require('./controller');
 
 const app = express();
 const PORT = 3000;
 
+// Middleware
 app.use(bodyParser.json());
 app.use(cors());
 
-connectDB;
+// Connect to the database
+connectDB();
 
-app.post('/register', registerUser);
-app.post('/login', loginUser);
+// Routes
+app.post('/register', registerUser );
+app.post('/login', loginUser );
 app.get('/products', getAllProducts);
-app.get('/profile', getUserProfile);
 
+// Start the server
 app.listen(PORT, () => {
-    console.log(`Server is running on ${PORT}...`);
+    console.log(`Server is running on http://localhost:${PORT}...`);
 });

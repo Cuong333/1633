@@ -49,6 +49,7 @@ function removeFromCart(productId) {
   carts = carts.filter(item => item.id !== productId);
   localStorage.setItem('carts', JSON.stringify(carts));
   renderCart();
+  alert("Bạn có muốn xóa sản phẩm này không?")
 }
 
 // Continue Shopping button

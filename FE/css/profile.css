@@ -1,0 +1,83 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto; /* Căn giữa container theo chiều ngang và thêm khoảng cách trên */
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    border-radius: 10px; /* Bo góc container */
+}
+
+img.rounded-circle {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15); /* Hiệu ứng đổ bóng cho ảnh đại diện */
+}
+
+h4.text-right {
+    font-weight: bold;
+    color: #333; /* Màu sắc chữ */
+}
+
+.labels {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.profile-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px; /* Bo góc nút */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.add-experience {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.add-experience:hover {
+    background-color: #0056b3;
+}
+
+.text-center button {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+input.form-control {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+}
+
+input.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.d-flex.align-items-center.text-center {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .col-md-3, .col-md-5, .col-md-4 {
+        margin-bottom: 20px; /* Khoảng cách giữa các phần trên giao diện nhỏ */
+    }
+}
